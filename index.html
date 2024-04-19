@@ -8,96 +8,67 @@
   body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* Full height */
+    height: 100%;
     font-family: Arial, sans-serif;
   }
 
-  .hero-section {
-    background: url('sunsetheaven.jpg') no-repeat center center fixed; 
-    background-size: cover;
-    height: 100%; /* Full height */
+  .full-height {
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Aligns content space-between */
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-
-  .hero-section h1 {
-    margin-top: 10%; /* Adjust as per your layout */
-    font-size: 3em;
-  }
-
-  .hero-section p {
-    font-size: 1.5em;
-  }
-
-  .character-image {
-    max-width: 20%;
-    height: auto;
-  }
-
-  .links {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between buttons */
-    flex-wrap: wrap;
+    align-items: center;
+    background: url('sunsetheaven.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
 
-  .link-button {
+  .zyzz-pepe-image {
+    max-width: 50%; /* Adjust the size as needed */
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .button {
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 5px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
   }
 
-  .link-button:hover {
+  .button:hover {
     background-color: #0056b3;
   }
 
-  .music-player {
-    margin-bottom: 10%; /* Adjust as per your layout */
-  }
-
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  audio {
+    margin-top: 20px;
   }
 
 </style>
 </head>
 <body>
 
-<div class="hero-section">
-  <h1>Zyzz Pepe's Stairway to Heaven</h1>
-  <p>Inspire and Conquer</p>
-  <img src="zyzzpepe.png" alt="Zyzz Pepe" class="character-image">
-  <div class="links">
-    <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link-button" target="_blank">Telegram</a>
-    <a href="https://x.com/zyzzpepe" class="link-button" target="_blank">Twitter</a>
+<div class="full-height">
+  <img src="zyzzpepe.png" alt="Zyzz Pepe" class="zyzz-pepe-image">
+  <div class="buttons">
+    <a href="https://t.me/+3CXs5DO3U8pkYThh" class="button" target="_blank">Telegram</a>
+    <a href="https://x.com/zyzzpepe" class="button" target="_blank">Twitter</a>
   </div>
-  <div class="music-player">
-    <audio controls loop>
-      <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+  <audio controls>
+    <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 </div>
-
-<footer>
-  <p>Tribute to Zyzz Pepe</p>
-</footer>
 
 </body>
 </html>
