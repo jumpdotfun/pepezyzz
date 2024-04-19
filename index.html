@@ -5,24 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zyzz Pepe Tribute</title>
 <style>
-  body {
+  body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-image: url('sunsetheaven.jpg');
-    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sunsetheaven.jpg');
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-size: cover;
+    position: relative;
   }
-  img {
-    max-width: 100%;
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .character-image {
+    width: 300px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
   }
   .buttons {
+    text-align: center;
     margin-top: 20px;
   }
   .button {
@@ -34,24 +47,49 @@
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s;
   }
   .button:hover {
     background-color: #0056b3;
   }
-  audio {
+  .music-player {
+    text-align: center;
     margin-top: 20px;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
   }
 </style>
 </head>
 <body>
-<img src="zyzzpepe.png" alt="Zyzz Pepe">
-<div class="buttons">
-  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="button" target="_blank">Join Telegram</a>
-  <a href="https://x.com/zyzzpepe" class="button" target="_blank">Follow on Twitter</a>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Zyzz Pepe's Stairway to Heaven</h1>
+    <p>Inspire and Conquer</p>
+  </div>
 </div>
-<audio controls loop>
-  <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+
+<img src="zyzzpepe.png" alt="Zyzz Pepe" class="character-image">
+
+<div class="buttons">
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="button" target="_blank">Telegram</a>
+  <a href="https://x.com/zyzzpepe" class="button" target="_blank">Twitter</a>
+</div>
+
+<div class="music-player">
+  <audio controls loop>
+    <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<footer>
+  <p>Tribute to Zyzz Pepe</p>
+</footer>
+
 </body>
 </html>
