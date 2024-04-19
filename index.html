@@ -1,54 +1,57 @@
-from IPython.display import HTML, display
-
-# Define the HTML template
-html_template = """
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zyzz Pepe Tribute</title>
 <style>
-    body {
-        background-image: url('sunsetheaven.jpg');
-        background-size: cover;
-        text-align: center;
-    }
-    img {
-        display: block;
-        margin: 0 auto;
-        width: 300px;
-        height: auto;
-    }
-    .btn {
-        display: inline-block;
-        margin: 20px;
-        padding: 10px 20px;
-        background: #333;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .btn:hover {
-        background: #555;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('sunsetheaven.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .buttons {
+    margin-top: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+  audio {
+    margin-top: 20px;
+  }
 </style>
 </head>
 <body>
-    <img src="zyzzpepe.png" alt="Zyzz Pepe">
-    <div>
-        <a href="https://t.me/+3CXs5DO3U8pkYThh" target="_blank" class="btn">Join Telegram</a>
-        <a href="https://x.com/zyzzpepe" target="_blank" class="btn">Follow on Twitter</a>
-    </div>
-    <audio autoplay loop>
-        <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+<img src="zyzzpepe.png" alt="Zyzz Pepe">
+<div class="buttons">
+  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="button" target="_blank">Join Telegram</a>
+  <a href="https://x.com/zyzzpepe" class="button" target="_blank">Follow on Twitter</a>
+</div>
+<audio controls autoplay loop>
+  <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 </body>
 </html>
-"""
-
-# Save the HTML to a file
-html_file_path = '/mnt/data/zyzz_pepe_tribute.html'
-with open(html_file_path, 'w') as file:
-    file.write(html_template)
-
-html_file_path
-
