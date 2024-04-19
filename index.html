@@ -6,33 +6,31 @@
 <title>Zyzz Pepe Tribute</title>
 <style>
   body, html {
-    height: 100%;
+    height: 100%; /* Ensures that the HTML and body take full height */
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stacks child elements vertically */
   }
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sunsetheaven.jpg');
-    height: 50%;
+    flex: 1; /* Allows this section to grow and fill available space */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
+    text-align: center;
   }
   .character-image {
-    width: 300px;
+    max-width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(-50%);
+    margin: 20px auto; /* Centers image horizontally */
   }
   .buttons {
     text-align: center;
@@ -54,13 +52,14 @@
   }
   .music-player {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
   }
   footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
+    width: 100%;
   }
 </style>
 </head>
