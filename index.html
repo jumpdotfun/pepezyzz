@@ -6,38 +6,48 @@
 <title>Zyzz Pepe Tribute</title>
 <style>
   body, html {
-    height: 100%; /* Ensures that the HTML and body take full height */
     margin: 0;
+    padding: 0;
+    height: 100%; /* Full height */
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column; /* Stacks child elements vertically */
   }
-  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sunsetheaven.jpg');
-    flex: 1; /* Allows this section to grow and fill available space */
-    background-position: center;
-    background-repeat: no-repeat;
+
+  .hero-section {
+    background: url('heaven-background.jpg') no-repeat center center fixed; 
     background-size: cover;
+    height: 100%; /* Full height */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content space-between */
     align-items: center;
-  }
-  .hero-text {
     color: white;
     text-align: center;
   }
+
+  .hero-section h1 {
+    margin-top: 10%; /* Adjust as per your layout */
+    font-size: 3em;
+  }
+
+  .hero-section p {
+    font-size: 1.5em;
+  }
+
   .character-image {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
-    display: block;
-    margin: 20px auto; /* Centers image horizontally */
   }
-  .buttons {
-    text-align: center;
-    margin-top: 20px;
+
+  .links {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between buttons */
+    flex-wrap: wrap;
   }
-  .button {
-    display: inline-block;
+
+  .link-button {
     padding: 10px 20px;
     margin: 0 10px;
     background-color: #007bff;
@@ -45,45 +55,44 @@
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
   }
-  .button:hover {
+
+  .link-button:hover {
     background-color: #0056b3;
   }
+
   .music-player {
-    text-align: center;
-    margin: 20px 0;
+    margin-bottom: 10%; /* Adjust as per your layout */
   }
+
   footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
+    position: fixed;
+    bottom: 0;
     width: 100%;
   }
+
 </style>
 </head>
 <body>
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1>Zyzz Pepe's Stairway to Heaven</h1>
-    <p>Inspire and Conquer</p>
+<div class="hero-section">
+  <h1>Zyzz Pepe's Stairway to Heaven</h1>
+  <p>Inspire and Conquer</p>
+  <img src="zyzzpepe.png" alt="Zyzz Pepe" class="character-image">
+  <div class="links">
+    <a href="https://t.me/+3CXs5DO3U8pkYThh" class="link-button" target="_blank">Telegram</a>
+    <a href="https://x.com/zyzzpepe" class="link-button" target="_blank">Twitter</a>
   </div>
-</div>
-
-<img src="zyzzpepe.png" alt="Zyzz Pepe" class="character-image">
-
-<div class="buttons">
-  <a href="https://t.me/+3CXs5DO3U8pkYThh" class="button" target="_blank">Telegram</a>
-  <a href="https://x.com/zyzzpepe" class="button" target="_blank">Twitter</a>
-</div>
-
-<div class="music-player">
-  <audio controls loop>
-    <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <div class="music-player">
+    <audio controls loop>
+      <source src="Tevvez - Legend Ψ.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 </div>
 
 <footer>
